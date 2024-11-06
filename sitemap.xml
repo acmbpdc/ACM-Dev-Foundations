@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://dev-foundations.acmbpdc.org/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-foundations.acmbpdc.org/Week%201%3A%20Flask%20%28Backend%29/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://dev-foundations.acmbpdc.org/Week%201%3A%20Flask%20%28Backend%29/src/app/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+</urlset>
