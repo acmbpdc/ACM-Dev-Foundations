@@ -1,10 +1,10 @@
-site_name: Template Site
+site_name: ACM Dev Foundations
 remote_branch: gh-pages
-site_url: https://template_site.acmbpdc.org
+site_url: https://dev-foundations.acmbpdc.org
 site_author: ACM BPDC
-site_description: A template site, replace this with the actual description
-repo_url: https://github.com/acmbpdc/mkdocs-template
-repo_name: acmbpdc/mkdocs-template
+site_description: The new ACM Dev Foundation series for learning Web Development using Python, Flask + HTML/CSS/JS
+repo_url: https://github.com/acmbpdc/ACM-Dev-Foundations
+repo_name: acmbpdc/ACM-Dev-Foundations
 
 copyright: Copyright &copy; 2024 - ACM BITS Pilani Dubai Campus
 
@@ -36,6 +36,11 @@ theme:
     - search.suggest
     - search.highlight
     - header.autohide
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
 
 extra:
   social:
@@ -46,14 +51,13 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/DYQdxquYwP
 
-# Use the below section for more specific control
-# nav:
-#   - Home: index.md
-#   - Git & GitHub Workshop: workshop.md
-
 markdown_extensions:
   - toc:
       permalink: True
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  
 
 plugins:
   - search
