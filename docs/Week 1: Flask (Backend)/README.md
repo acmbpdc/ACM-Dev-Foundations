@@ -1,4 +1,3 @@
-{% raw %}
 # Flask Workshop
 
 ![Flask Logo](../assets/flask-logo.png)
@@ -813,5 +812,3 @@ To further your Flask knowledge, consider exploring:
 - For more information, check out the [Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/) and explore additional projects to enhance your skills.
 
 Happy Coding! 🚀
-
-{% endraw %}
