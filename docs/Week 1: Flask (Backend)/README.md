@@ -512,7 +512,7 @@ Flask is a lightweight framework for web development in Python, designed to make
 
 ## 16. Working with Templates
 
-1. Create a folder `template` in your project.
+1. Create a folder `templates` in your project.
 
 2. Add `index.html` in `templates`  
 
