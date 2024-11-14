@@ -1,5 +1,6 @@
-![Alt text](imgs/header.png "Title")
 # **Introduction to Frontend Development**
+
+![Alt text](imgs/header.png "Title")
 
 ## **1. What is Frontend Development?**
 Frontend development is creating the part of a website or app that users interact with. This includes everything you see and interact with on a website, like buttons, images, and text.
