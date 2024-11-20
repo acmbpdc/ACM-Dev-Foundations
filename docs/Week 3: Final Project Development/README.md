@@ -1,4 +1,4 @@
-# Building a Simplified Flask-Based Portfolio Website
+# A Full Stack Portfolio Website
 
 In this workshop, we'll be building a simple portfolio website with Flask and a MySQL database. We'll cover everything from setup to integrating the database and creating a user-friendly front end with Bootstrap.
 
@@ -23,7 +23,7 @@ Before diving into building the project, it's crucial to understand the foundati
 
 ---
 
-# 1. Project Setup
+## 1. Project Setup
 
 ### 1.1 Setting up a Virtual Environment
 
@@ -48,14 +48,13 @@ source myenv/bin/activate <for Mac/Linux>
 With the virtual environment activated, install Flask and other dependencies.
 
 ```bash
-pip install Flask==2.1.2
-pip install Flask-SQLAlchemy==2.5.1
-pip install SQLAlchemy==1.4.46
+pip install Flask
+pip install Flask-SQLAlchemy
 ```
 
 ---
 
-# 2. Building the Basic Front-End Layout
+## 2. Building the Basic Front-End Layout
 
 To start, we will focus on building the initial structure of the front-end using **HTML** and **CSS**. This section will guide you through understanding the provided `index.html` and `style.css` files.    
 
@@ -602,7 +601,7 @@ And that is it , you now have an image as your background . You can accordingly 
 
 ---
 
-# 3. Database Structure and Setup
+## 3. Database Structure and Setup
 
 #### 1. **What is a Backend?**
 
@@ -1075,7 +1074,7 @@ Now making changes to the `style.css` , add these to the style .css
 
 ---
 
-# 4. Javascript Popup
+## 4. Javascript Popup
 
 This is just a small bit of javascript which will show a popup everytime a new comment is added.
 
@@ -1105,7 +1104,7 @@ This script runs when the page is fully loaded:
 
 ---
 
-# 5. Running the App
+## 5. Running the App
 
 To run the flask app now , type the following command into the command shell and the site on http://127.0.0.1:5000
 

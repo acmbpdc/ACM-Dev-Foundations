@@ -1,4 +1,4 @@
-## HTML:
+## HTML
 
 ```html
 <!DOCTYPE html>
@@ -122,7 +122,7 @@
 </html>
 ```
 
-## CSS:
+## CSS
 
 ```css
 /* Reset and Default Styles */
