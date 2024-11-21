@@ -48,8 +48,10 @@ source myenv/bin/activate <for Mac/Linux>
 With the virtual environment activated, install Flask and other dependencies.
 
 ```bash
-pip install Flask
-pip install Flask-SQLAlchemy
+Flask==2.1.2
+Flask-SQLAlchemy==2.5.1
+SQLAlchemy==1.4.46
+Werkzeug==2.0.3
 ```
 
 ---
