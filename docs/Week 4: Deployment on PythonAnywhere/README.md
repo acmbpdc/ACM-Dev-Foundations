@@ -57,7 +57,7 @@ These are the topics that we'll broadly be covering in this session:
 - **Content**: Step-by-step instructions for deploying a Flask or Django app on PythonAnywhere. Includes setting up an account, configuring the web app, and linking to GitHub for automated deployment.
 
 - **Overview**:
-    * [Getting Started with PythonAnywhere](PYTHONANYWHERE.md#getting-started-with-pythonanywhere)
+    * [Getting Started with PythonAnywhere](PYTHONANYWHERE.md#deploying-your-project-on-python-anywhere)
     * [What is PythonAnywhere?](PYTHONANYWHERE.md#what-is-pythonanywhere)
     * [Why Use PythonAnywhere?](PYTHONANYWHERE.md#why-use-pythonanywhere)
     * [Key Features](PYTHONANYWHERE.md#key-features)

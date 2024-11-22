@@ -25,7 +25,7 @@ Secrets can be leaked in many ways. The most common place secrets are leaked are
 
 If secrets are leaked, it can lead to a loss of trust, credibility, and even business. In some cases, leaked secrets can also lead to legal action. 
 
-And noow you know, that's why it's so important to have a plan for managing secrets.
+And now you know, that's why it's so important to have a plan for managing secrets.
 
 In summary, **Never hardcode any secrets in your code!**
 

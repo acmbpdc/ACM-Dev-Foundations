@@ -40,6 +40,15 @@ PythonAnywhere provides you with access to a virtual machine running on the clou
 1. **Sign up**: First, go to PythonAnywhere and create a free account.
 
 2. **Upload your code**: After signing in, you can upload your Python app files directly via the web interface, or you can pull them from a version control system like GitHub. We'll be taking the second approach.
+Remember to use the following commands for managing dependencies:
+* To get all the external packages used in the project
+```bash
+pip freeze > requirements.txt
+```
+* To install all the external packages used in the project:
+```bash
+pip install -r requirements.txt
+```
 
 * Create your GitHub account
 * Create a public GitHub repo, and upload in the code from the workshop.
@@ -60,12 +69,14 @@ PythonAnywhere provides you with access to a virtual machine running on the clou
     * Set the `Source Code` location to the path where your main flask app code is saved.
     ```python
     # add your project directory to the sys.path
-    project_home = '{{PATH TO YOUR PROJECT}}'
+    project_home = '{{PATH_TO_YOUR_PROJECT}}'
     if project_home not in sys.path:
         sys.path = [project_home] + sys.path
     ```
 
 5. **Run your app:** Once everything is set up, you can click Reload to deploy your app. It will be accessible via a web link provided by PythonAnywhere, something like {{yourusername}}.pythonanywhere.com
+
+You should now have a fully functioning portfolio website deployed on Python Anywhere!
 
 ## Adding the Quotes API
 
@@ -150,7 +161,12 @@ def index():
     )
 ```
 
-And push your changes! 
+And push your changes!
+
+```bash
+git add .
+git commit -m "final project ready!
+```
 
 Pushed? 
 
