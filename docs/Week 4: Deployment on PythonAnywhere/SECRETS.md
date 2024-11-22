@@ -57,6 +57,7 @@ Create a .env file and paste your secrets as key-value pairs, for example:
 // Secrets for Google OAuth
 CLIENT_ID = xxxxxx
 CLIENT_SECRET=xxxxxx
+API_KEY=xxxxx
 ```
 
 And now an important disclaimer,
@@ -78,9 +79,11 @@ load_dotenv()
 
 client_id = os.getenv("CLIENT_ID")
 client_secret = os.getenv("CLIENT_SECRET")
+api_key = os.getenv("API_KEY")
 
 print("CLIENT_ID: ", client_id )
 print("CLIENT_SECRET: ", client_secret)
+print("API_KEY: ", api_key)
 ```
 
 And now you're all set to push to production!
