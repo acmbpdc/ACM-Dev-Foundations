@@ -29,10 +29,12 @@ Windows / Mac / Linux: [Click here to download Git.](https://git-scm.com/downloa
 ## Git Cheatsheet
 
 ### Configuring user information for local repos:
+
 * Set the name you want attached to your commit transactions
 ```bash
 git config --global user.name "[name]"
 ```
+
 * Set the email you want attached to your commit transactions
 ```bash
 git config --global user.email "[email address]"
@@ -41,10 +43,12 @@ git config --global user.email "[email address]"
 ### Creating repositories
 
 When starting out with a new repo, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
+
 * Turn an existing directory into a git repository
 ```bash
 git init
 ```
+
 * Clone a repo that exists on GitHub
 ```bash
 git clone [url]
@@ -54,7 +58,7 @@ git clone [url]
 
 Sometimes it may be a good idea to exclude files from being tracked with Git. This can be done by using a special file named `.gitignore`. Just put in the file names that you dont want to track here.
 
-**For example:**
+**For example:** Contents of .gitignore could be:
 ```env
 .env
 __pycache__/
@@ -62,13 +66,15 @@ __pycache__/
 instance/
 *.db
 myenv
-test.py
 ```
 
 Here, there are a few things going on..
 1. **.env**: Never forget to add this onto .gitignore! Your secrets will get leaked!
+
 2. **__pycache__/ and .pyc**: This folder contains the bytecode files that python compiles, of the extension `.pyc`. Not really useful for Development purposes, so no point of pushing this into the repo
+
 3. **instance/ and .db**: This folder contains the SQLite3 db file, no need to push this as the server will maintain the database itself
+
 4. **myenv**: Your python virtual environment folder name, please don't push this, it's just annoying to see 10,000+ lines of code added and going through those changes. Instead, we push ```requirements.txt```, so that the person who wants to run your code will make his own virtual environment and install all dependencies onto it manually.
 
 ### Making changes
