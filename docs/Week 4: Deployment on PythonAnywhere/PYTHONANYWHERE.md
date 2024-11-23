@@ -52,29 +52,38 @@ pip install -r requirements.txt
 
 * Create your GitHub account
 * Create a public GitHub repo, and upload in the code from the workshop.
+* Once your code is available on GitHub, you can `clone` your repo into pythonanywhere (on pythonanywhere console)
+```bash
+git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/{{YOUR_REPO_NAME}}
+```
 
 3. **Set up a web app:**
 * Go to the Web tab in PythonAnywhere’s dashboard.
 * Select Add a new web app.
 * Choose your Python version and framework as Flask.
 
-4. **Configure the WSGI file**:
+4. Set the `Source Code` location to the path where your main flask app code is saved (usually the file where app = Flask(__name__) is defined in Flask)
+
+5. Set the working directory to the same location as above.
+
+6. **Configure the WSGI file**:
 * PythonAnywhere uses WSGI (Web Server Gateway Interface) to serve Python apps.
-* You’ll need to edit the WSGI configuration file to point to your Python app’s entry point (usually the file where app = Flask(__name__) is defined in Flask.
-* * Make the following changes in the `WSGI configuration file`:
-    * Set the project home, and import the application with the following line of code:
-    ```python
-    from run import app as application 
-    ```
-    * Set the `Source Code` location to the path where your main flask app code is saved.
+* You’ll need to edit the WSGI configuration file to point to your Python app’s entry point (again, usually the file where app = Flask(__name__) is defined in Flask).
+* Make the following changes in the `WSGI configuration file`:
+    * Set the project home:
     ```python
     # add your project directory to the sys.path
     project_home = '{{PATH_TO_YOUR_PROJECT}}'
     if project_home not in sys.path:
         sys.path = [project_home] + sys.path
     ```
+    ```
+    * Change the last line to import the `app` variable from our `run.py` file
+     ```python
+    from run import app as application 
+    ```
 
-5. **Run your app:** Once everything is set up, you can click Reload to deploy your app. It will be accessible via a web link provided by PythonAnywhere, something like {{yourusername}}.pythonanywhere.com
+7. **Run your app:** Once everything is set up, you can click Reload to deploy your app. It will be accessible via a web link provided by PythonAnywhere, something like {{yourusername}}.pythonanywhere.com
 
 You should now have a fully functioning portfolio website deployed on Python Anywhere!
 
@@ -161,14 +170,24 @@ def index():
     )
 ```
 
-And push your changes!
+Just to see which files have been edited:
+```bash
+git status
+```
+And then `push` your changes!
 
 ```bash
 git add .
 git commit -m "final project ready!
 ```
 
-Pushed? 
+Pushed? Your changes have now been added to your GitHub repo!
+
+Now, `pull` your changes into pythonanywhere (using the pythonanywhere console)
+
+``bash
+git pull
+```
 
 Then you're finally done! You've completed deployment and added a brand new feature! Hurray!
 
