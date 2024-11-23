@@ -95,6 +95,16 @@ git add .
 ```bash
 git commit -m "[descriptive message]"
 ```
+
+* Upload your local changes into your GitHub repo online (after commiting)
+```bash
+git push
+```
+
+* Download changes made onto the online GitHub repo into your local git repo
+```bash
+git pull
+```
 ## Want to Know More?
 
 If you're new to Git and GitHub, or want to dive deeper, here's an amazing resource that will guide you through everything you need to know to get started with Git.
