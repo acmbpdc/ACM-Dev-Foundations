@@ -185,7 +185,7 @@ Pushed? Your changes have now been added to your GitHub repo!
 
 Now, `pull` your changes into pythonanywhere (using the pythonanywhere console)
 
-``bash
+```bash
 git pull
 ```
 
